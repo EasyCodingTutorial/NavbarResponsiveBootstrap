@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,400;1,500&display=swap");
+
+* {
+  font-family: "Besley", serif;
+}
+:root {
+  --main: #f10000;
+  --boxShadow: 0 0.5rem 1.5rem rgba(198, 13, 13, 0.8);
+}
+*::selection {
+  background: var(--main);
+  color: #000;
+}
+.navbar {
+  padding: 20px;
+  box-shadow: var(--boxShadow);
+}
+.navbar-brand {
+  color: var(--main) !important;
+  font-weight: 800;
+}
+.navbar-brand span {
+  font-weight: 900;
+}
+.navbar li a {
+  padding: 5px;
+  font-weight: 800;
+  margin-left: 10px;
+}
+.navbar li a:hover,
+.navbar li a.active {
+  background: var(--main) !important;
+  color: #fff !important;
+}
+.dropdown-menu li {
+  overflow: hidden;
+}
+body {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(img.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+@media (max-width: 990px) {
+  .navbar li a {
+    margin: 10px auto;
+    box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+}
